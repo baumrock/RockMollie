@@ -35,10 +35,15 @@ class RockMollie extends WireData implements Module, ConfigurableModule
   {
     require_once("vendor/autoload.php");
     $api = new \Mollie\Api\MollieApiClient();
-    if ($this->live) {
+
+    if (getenv('DDEV_HOSTNAME') || !$this->live) {
+      // use the test api key
+      $api->setApiKey($this->testapikey);
+    } else {
+      // we are live
       if (!$this->liveapikey) throw new WireException("No Live API kay found for RockMollie");
       $api->setApiKey($this->liveapikey);
-    } else $api->setApiKey($this->testapikey);
+    }
     return $api;
   }
 
