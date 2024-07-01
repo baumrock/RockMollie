@@ -1,3 +1,14 @@
+## [2.0.0](https://github.com/baumrock/RockMollie/compare/v1.2.0...v2.0.0) (2024-07-01)
+
+
+### ⚠ BREAKING CHANGES
+
+* configure module via config file
+
+### Features
+
+* configure module via config file ([daeea19](https://github.com/baumrock/RockMollie/commit/daeea19a96884a05c4733b80b3c76896bb6f789e))
+
 ## [1.2.0](https://github.com/baumrock/RockMollie/compare/v1.1.0...v1.2.0) (2024-04-18)
 
 
