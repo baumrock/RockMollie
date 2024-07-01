@@ -2,6 +2,8 @@
 
 namespace ProcessWire;
 
+use Mollie\Api\MollieApiClient;
+
 /**
  * @author Bernhard Baumrock, 14.08.2020
  * @license Licensed under MIT
@@ -31,7 +33,7 @@ class RockMollie extends WireData implements Module, ConfigurableModule
   /**
    * Get mollie api instance
    */
-  public function api()
+  public function api(): MollieApiClient
   {
     require_once("vendor/autoload.php");
     $api = new \Mollie\Api\MollieApiClient();
