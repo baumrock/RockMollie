@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/baumrock/RockMollie/compare/v2.0.0...v2.0.1) (2024-10-20)
+
+
+### Bug Fixes
+
+* update docs ([86eb8ed](https://github.com/baumrock/RockMollie/commit/86eb8edaed396d660c39bf13c984733b8a540cbf))
+
 ## [2.0.0](https://github.com/baumrock/RockMollie/compare/v1.2.0...v2.0.0) (2024-07-01)
 
 
