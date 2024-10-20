@@ -1,3 +1,10 @@
+## [2.0.2](https://github.com/baumrock/RockMollie/compare/v2.0.1...v2.0.2) (2024-10-20)
+
+
+### Bug Fixes
+
+* add info.php file ([f23d599](https://github.com/baumrock/RockMollie/commit/f23d599176820498e8e0255ace857b088b3c1734))
+
 ## [2.0.1](https://github.com/baumrock/RockMollie/compare/v2.0.0...v2.0.1) (2024-10-20)
 
 
