@@ -12,24 +12,6 @@ use Mollie\Api\MollieApiClient;
 class RockMollie extends WireData implements Module, ConfigurableModule
 {
 
-  public static function getModuleInfo()
-  {
-    return [
-      'title' => 'RockMollie',
-      'version' => json_decode(file_get_contents(__DIR__ . "/package.json"))->version,
-      'summary' => 'Integrate Mollie Payments into your ProcessWire website',
-      'autoload' => false,
-      'singular' => true,
-      'icon' => 'money',
-      'requires' => [],
-      'installs' => [],
-    ];
-  }
-
-  public function init()
-  {
-  }
-
   /**
    * Get mollie api instance
    */
