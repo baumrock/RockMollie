@@ -1,6 +1,6 @@
 # RockMollie
 
-Mollie Payment Module for [RockCommerce](https://www.baumrock.com/RockCommerce)
+Mollie Payment Module for [RockCommerce](https://www.baumrock.com/RockCommerce) that can also be used as standalone module.
 
 This module integrates Mollie Payments into your ProcessWire project. It provides a simple and efficient way to handle online payments using the Mollie API.
 
