@@ -11,16 +11,18 @@ use Mollie\Api\MollieApiClient;
  */
 class RockMollie extends WireData implements Module, ConfigurableModule
 {
+  public $api = false;
 
   /**
    * Get mollie api instance
    */
   public function api(): MollieApiClient
   {
+    if ($this->api) return $this->api;
     require_once("vendor/autoload.php");
     $api = new \Mollie\Api\MollieApiClient();
-    $api->setApiKey($this->wire->config->mollieApiKey);
-    return $api;
+    $api->setApiKey(wire()->config->mollieApiKey);
+    return $this->api = $api;
   }
 
   /**

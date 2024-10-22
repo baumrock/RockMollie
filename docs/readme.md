@@ -5,16 +5,15 @@ Docs are under construction 😇
 ## Create a simple payment
 
 ```php
-$mollie = new \Mollie\Api\MollieApiClient();
-$mollie->setApiKey('xxx');
+$mollie = wire()->modules->get('RockMollie')->api();
 $payment = $mollie->payments->create([
   "amount" => [
     "currency" => "EUR",
     "value" => "10.00"
   ],
   "description" => "My first API payment",
-  "redirectUrl" => "https://www.baumrock.com/thanks/",
-  "webhookUrl"  => "https://www.baumrock.com/mollie-webhook/",
+  "redirectUrl" => "https://www.example.com/thanks/",
+  "webhookUrl"  => "https://www.example.com/mollie-webhook/",
 ]);
 db($payment);
 ```
