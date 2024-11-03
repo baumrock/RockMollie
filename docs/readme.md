@@ -2,6 +2,20 @@
 
 Docs are under construction 😇
 
+This module is a wrapper for the Mollie API. Please refer to the [Mollie API docs](https://docs.mollie.com/docs/getting-started) for more information.
+
+## Setup
+
+To use RockMollie, you need to set the Mollie API key in the `config.php` file:
+
+```php
+// for development
+$config->mollieApiKey = 'test_XXX';
+
+// for production
+$config->mollieApiKey = 'live_XXX';
+```
+
 ## Create a simple payment
 
 ```php
@@ -21,8 +35,7 @@ db($payment);
 ## SEPA Direct Debit Example
 
 ```php
-$mollie = new \Mollie\Api\MollieApiClient();
-$mollie->setApiKey("xxx");
+$mollie = wire()->modules->get('RockMollie')->api();
 
 $customer = $mollie->customers->create([
   "name" => "API Test @ ".date("Y-m-d H:i:s"),
