@@ -9,4 +9,7 @@ $info = [
   'autoload' => false,
   'singular' => true,
   'icon' => 'money',
+  'installs' => [
+    'PaymentProviderMollie',
+  ],
 ];
